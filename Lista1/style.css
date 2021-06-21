@@ -27,9 +27,31 @@ input
 .oculto
 {
     overflow:hidden;
-    max-height:0px;
+    max-height:0;
+    padding:0%;
 }
 div
 {
-    transition: max-height 2s;
+    overflow:hidden;
+    max-height:100%;
+    background:rgba(255,255,255,0.1);
+    width:fit-content;
+    padding:10px;
+    border-radius:5px;
+}
+button
+{
+    background-color:rgba(255,255,255,0.3);
+    border:none;
+    border-radius:5px;
+    padding:20px;
+    font-family:consolas;
+    margin-bottom:20px;
+    color:white;
+    font-size:large;
+}
+button:hover
+{
+    cursor:pointer;
+    background-color:rgba(255,255,255,0.5);
 }
