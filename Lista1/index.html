@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Algoritmo Genético</title>
+</head>
+<body>
+    <h1>Algoritmo Genético - Lista1 - Wellington Bravin</h1>
+    <p>Nº do Exercício:</p>
+    <input type="text" id=nExercicio placeholder="Numero do exercício"><br>
+    <p>Taxa de mutação: (recomendável de 0.01 a 0.2)</p>
+    <input type="text" id=taxaMutacao placeholder="TaxaMutacao" value=0.05><br>
+    <p>Quantidade de população por geração: (recomendável de 100 a 5000)</p>
+    <input type="text" id=qtdPopulacao placeholder="qtdPopulacao" value=5000><br>
+    <br>
+    <button onclick=start()>Start</button>
+    <button onclick=stop()>Stop</button>    
+    <div id=resultados class="oculto">
+    <p>nGeracao:</p><span id=nGeracoes></span>
+    <p>Melhor Resultado:</p><span id=geracaoFinal></span>
+        <p><span id= nomeVar1></span>: <span id= valorVar1></span></p>
+        <p><span id= nomeVar2></span>: <span id= valorVar2></span></p>
+        <p>Fitness: <span id= valorFitness></span></p>
+    </div>
+
+    <script src="p5.min.js"></script>
+    
+    <script src="index.js"></script>
+    <script src="parametrosDeEntrada.js"></script>
+    <script src="aleatorio.js"></script>
+    <script src="mutacao.js"></script>
+    <script src="canvas.js"></script>
+
+    
+</body>
+</html>
